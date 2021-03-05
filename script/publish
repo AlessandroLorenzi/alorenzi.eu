@@ -1,0 +1,5 @@
+#!/bin/bash
+
+jekyll  build
+rsync -a --delete  _site/ root@alorenzi.eu:/srv/blog
+

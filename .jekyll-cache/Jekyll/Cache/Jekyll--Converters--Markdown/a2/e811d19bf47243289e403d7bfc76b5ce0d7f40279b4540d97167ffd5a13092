@@ -1,0 +1,117 @@
+I"�<h1 id="alessandro-lorenzi">Alessandro Lorenzi</h1>
+<p>DevOps Engineer, amateur photographer, boardgamer</p>
+
+<div id="webaddress">
+<a href="me@alorenzi.eu">me@alorenzi.eu</a>
+| <a href="https://alorenzi.eu/cv/">https://alorenzi.eu/cv/</a>
+</div>
+
+<h2 id="who-am-i">Who Am I</h2>
+
+<p>I meet programming world when I was 12yo and I loved it! Few
+years later I started using linux and meet Internet. Since then Computers is
+a charming world to me.</p>
+
+<p>In my job I emphasize on quality of the results over the fast execution.<br />
+In particular when I face a new project I study and I weigh alternative decisions before 
+develop the solution.</p>
+
+<p>In spare time I walk in cities or mountains taking photographs or I play boardgames.</p>
+
+<h2 id="currently">Currently</h2>
+
+<p><code class="language-plaintext highlighter-rouge">2019-now</code>
+<strong>DevOps Engineer</strong> @ <a href="https://www.brumrbum.it/">brumbrum S.p.A.</a>
+brumbrum.it is a ramp up company, we sell renewed cars and long term
+car rentals.</p>
+
+<p>Our infrastructure is hosted on <strong>AWS</strong>. We use many AWS services: 
+The workload is mostly on <strong>ECS</strong> and <strong>lambda</strong>, data are stored in 
+<strong>RDS</strong> and <strong>S3</strong>, the cdn is <strong>CludFront</strong> we build some services
+in <strong>Codebuild</strong>, our data scientists use <strong>sagemakers</strong> tools and so on.</p>
+
+<p>I configure and manage this infrastructure via <strong>Cloudformation</strong>.</p>
+
+<p>Our teams develop in PHP, Python, Node and Go and I lead developers to
+write better code and I help them troubleshooting. When I have to develop a
+service or a lambda I prefere to develop in <strong>Go</strong>, I appreciate a lot
+this language!</p>
+
+<h2 id="past-occupations">Past Occupations</h2>
+
+<p><code class="language-plaintext highlighter-rouge">2016-2019</code>
+<strong>DevOps Engineer</strong> @ <a href="https://www.lm-net.it/">lm-networks</a><br />
+LM-Networks was a cosultancy company.</p>
+
+<p>The main project I was involved was the development of 
+the infrastructores of the shops online of supermarket chains 
+(<a href="https://www.digitelematica.it/marketsuite-solution/">MaketSuit by Digitelematica</a>).
+My responsabilities was mantaining a huge flot of linux servers 
+Ubuntu and CentOS in our datacenter (<em>VmWare</em>) and phisical hosts in stores. 
+Evreything automated by <em>puppet</em> &amp; monitored by <em>icinga2</em>.</p>
+
+<p>I was involved in other projects hosted in AWS Cloud, Digital Ocean
+and private infrastructures.</p>
+
+<p>Alongside consultancy we offered web/VPS/mail hosting services.</p>
+
+<p><code class="language-plaintext highlighter-rouge">2015-2016</code>
+<strong>SRE</strong> @<a href="https://www.neen.it/">neen</a><br />
+Neen is an hosting company specialized in e-commerces with a focus on 
+magento.</p>
+
+<p>My duty was maintaining evryting up and running!</p>
+
+<p>I was also involved in a big migration from puppet 2 to ansible</p>
+
+<p><code class="language-plaintext highlighter-rouge">2014</code>
+<strong>RedHat Instructor</strong> @ <a href="https://www.extraordy.com/">Extraordy</a><br />
+Extraordy is the Red Hat’s training partner in Italy.</p>
+
+<p>I delivered official RedHat courses (RHCSA/RHCE path).</p>
+
+<p>Sometime I’ve done some consultency on RedHat products (RedHat Enterprise Virtualization)</p>
+
+<p><code class="language-plaintext highlighter-rouge">2011-2012</code>
+<strong>HP UX/Solaris Systems Engineer</strong> (Consultant) 
+@<a href="https://vodafone.it/">Vodafone IT</a> in Q&amp;A Environment.</p>
+
+<p>My duties was to install Vodafone software on HP UX and Solaris Hosts, 
+and support testers.</p>
+
+<h2 id="education">Education</h2>
+
+<p><code class="language-plaintext highlighter-rouge">2006-2011</code>
+<strong>Università degli Studi di Milano</strong><br />
+Bachelor’s degree in computer science</p>
+
+<h2 id="toolbox">Toolbox</h2>
+
+<p><strong>Indispensable tools</strong>: linux, git, docker,</p>
+
+<p><strong>InfraAsACode</strong>: Cloudformation on <strong>AWS</strong>, Terraform on <strong>Google Cloud</strong></p>
+
+<p><strong>Coding</strong>: 2 years in <strong>GoLang</strong> (and I love it!). 
+Also PHP, Python and a bit of node.</p>
+
+<p><strong>CI</strong>: Bitbuckt Pipeline (and used much more)</p>
+
+<p><strong>A bit rusty</strong>:</p>
+
+<ul>
+  <li><em>HashiCorp</em> stuff: consul, vault, packer</li>
+  <li><em>Automation</em>: puppet, ansible</li>
+  <li><em>Icinga2</em></li>
+  <li><em>ELK Stack</em></li>
+</ul>
+
+<h3 id="gdpr">GDPR</h3>
+
+<p>I hereby consent to the processing of the personal data in this CV according to art. 13 GDPR 679/16 for the sole purpose of consideration of my skills and experience for professional opportunities.</p>
+
+<!--
+
+Last updated: March 2021 
+-->
+
+:ET
