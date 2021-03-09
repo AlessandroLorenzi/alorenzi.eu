@@ -71,7 +71,7 @@ My duty was maintaining everything up and running!
 
 I was also involved in a big migration from puppet 2 to ansible.
 
-`2014`
+`2013`
 **RedHat Instructor** @ [Extraordy](https://www.extraordy.com/)  
 Extraordy is the Red Hat’s training partner in Italy.
 
@@ -80,7 +80,7 @@ I delivered official RedHat courses (RHCSA/RHCE path).
 Sometime I’ve done some consultancy on RedHat products, mostly
 RedHat Enterprise Virtualization.
 
-`2011-2012`
+`2010-2012`
 **HP UX/Solaris Systems Engineer** (Consultant)
 @[Vodafone IT](https://vodafone.it/) in Q&A Environment.
 
