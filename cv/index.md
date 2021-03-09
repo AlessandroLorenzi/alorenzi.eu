@@ -89,6 +89,9 @@ and support testers.
 
 ## Education
 
+`2020`
+**First Certificate in English** Grade B2 - ID B2927646
+
 `2006-2011`
 **Università degli Studi di Milano**  
 Bachelor's degree in computer science
