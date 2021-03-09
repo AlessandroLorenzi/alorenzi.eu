@@ -43,6 +43,24 @@ write better code and I help them troubleshoot. When I have to develop a
 service or a lambda I prefer to develop in Go,
 I appreciate this language a lot!
 
+## Toolbox
+
+**Indispensable tools**: linux, git, docker,
+
+**InfraAsACode**: Cloudformation on **AWS**, Terraform on **Google Cloud**
+
+**Coding**: 2 years in **GoLang** (and I love it!).
+Also PHP, Python and a bit of node.
+
+**CI**: Bitbuckt Pipeline (and used much more)
+
+**A bit rusty**:
+
+- _HashiCorp_ stuff: consul, vault, packer
+- _Automation_: puppet, ansible
+- _Icinga2_
+- _ELK Stack_
+
 ## Past Occupations
 
 `2016-2019`
@@ -87,32 +105,25 @@ RedHat Enterprise Virtualization.
 My duties were to install Vodafone software on HP UX and Solaris Hosts,
 and support testers.
 
-## Education
+## Certs
 
 `2020`
-**First Certificate in English** Grade B2 - ID B2927646
+**First Certificate in English** Credential ID B2927646
+
+- Grade B2
+
+`2013`
+**Red Hat, Inc** Credential ID 130-026-164
+
+- RHCI - Red Hat Certified Instructor
+- RHCE - Red Hat Certified Engineer
+- RHCSA - Red Hat Certified System Administrator
+
+## Education
 
 `2006-2011`
 **Università degli Studi di Milano**  
 Bachelor's degree in computer science
-
-## Toolbox
-
-**Indispensable tools**: linux, git, docker,
-
-**InfraAsACode**: Cloudformation on **AWS**, Terraform on **Google Cloud**
-
-**Coding**: 2 years in **GoLang** (and I love it!).
-Also PHP, Python and a bit of node.
-
-**CI**: Bitbuckt Pipeline (and used much more)
-
-**A bit rusty**:
-
-- _HashiCorp_ stuff: consul, vault, packer
-- _Automation_: puppet, ansible
-- _Icinga2_
-- _ELK Stack_
 
 ### GDPR
 
