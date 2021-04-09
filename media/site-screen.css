@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap");
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Indie Flower", cursive;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.mainbody {
+  max-width: 50em;
+  margin: auto;
+}
+.postbody {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.postcontent {
+  text-align: justify;
+  font-size: 1em;
+}
+
+.highlight {
+  padding: 0.01em 0.7em;
+}

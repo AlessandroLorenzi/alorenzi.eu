@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {% if page.title %} {{ page.title }} | {% endif %}Alessandro Lorenzi
+    </title>
+    <link
+      href="/media/site-screen.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link
+      href="/media/dracula.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <div class="head">
+      <a href="/">Alessandro Lorenzi</a>
+    </div>
+    <div class="mainbody">
+      <h1>{{page.title}}</h1>
+      <div class="postcontent">{{content}}</div>
+    </div>
+    <hr />
+    <p>Posted by {{ page.author }} on {{ page.date | date_to_string }}</p>
+  </body>
+</html>
