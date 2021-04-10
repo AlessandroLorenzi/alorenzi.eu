@@ -57,3 +57,10 @@ h1 {
   font-size: 0.75em;
   font-style: italic;
 }
+
+.syntax {
+  width: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ff79c6  #282a36 ;
+}
