@@ -1,7 +1,7 @@
 ---
-layout: post 
-author: Alessandro Lorenzi 
-title: Service package 
+layout: post
+author: Alessandro Lorenzi
+title: Service package
 tags: golang
 ---
 
@@ -18,15 +18,15 @@ package mypackage
 import "github.com/xyz/xyz"
 
 func GetInfoFromXyz() (string, error) {
-	xyzSvc := xyz.New(
-		os.Getenv("XYZ_KEY_ID"),
-		os.Getenv("XYZ_SECRET_KEY"),
-	)
-	data, err := xyzSvc.GetInfo(42)
-	if err != nil {
-		return "", err
-	}
-	return data.InfoINeed, nil
+    xyzSvc := xyz.New(
+        os.Getenv("XYZ_KEY_ID"),
+        os.Getenv("XYZ_SECRET_KEY"),
+    )
+    data, err := xyzSvc.GetInfo(42)
+    if err != nil {
+        return "", err
+    }
+    return data.InfoINeed, nil
 }
 ```
 
@@ -79,17 +79,16 @@ In main we can inject xyz connection as dependency. In this example we will shar
 package main
 
 func main() {
-	xyzSvc := xyz.New(
-		os.Getenv("XYZ_KEY_ID"),
-		os.Getenv("XYZ_SECRET_KEY"),
-	)
+        os.Getenv("XYZ_KEY_ID"),
+        os.Getenv("XYZ_SECRET_KEY"),
+    )
 
-	myPackageSvc := mypackage.New(xyzSvc)
-	anotherSvc := anotherpackage.New(xyzSvc)
+    myPackageSvc := mypackage.New(xyzSvc)
+    anotherSvc := anotherpackage.New(xyzSvc)
 
-	theValue, _ := myPackageSvc.GetInfoFromXyz()
+    theValue, _ := myPackageSvc.GetInfoFromXyz()
 
-	anotherSvc.DoStuff(theValue)
+    anotherSvc.DoStuff(theValue)
 }
 ```
 
