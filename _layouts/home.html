@@ -13,12 +13,16 @@
     />
   </head>
   <body>
+    <div class="head">
+      <a href="/">Alessandro Lorenzi</a>
+    </div>
     <div class="mainbody">
       <div id="content">{{ content }}</div>
       <h2>Posts</h2>
       <ul>
         {% for post in site.posts %}
         <li>
+          {{post.date | date: "%-d %B %Y"}} -
           <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}

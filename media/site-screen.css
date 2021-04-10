@@ -13,7 +13,26 @@ h6 {
   font-family: "Indie Flower", cursive;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
+  font-size: 3em;
+}
+
+.head {
+  height: 5em;
+  width: 100%;
+  background-image: url(/media/wallpaper.jpg);
+  background-position: center;
+  text-align: center;
+  padding-top: 16em;
+}
+.head a {
+  color: #fff;
+  font-family: "Indie Flower", cursive;
   font-size: 3em;
 }
 
@@ -35,4 +54,9 @@ h1 {
 
 .highlight {
   padding: 0.01em 0.7em;
+}
+
+.postedby {
+  font-size: 0.75em;
+  font-style: italic;
 }
