@@ -8,7 +8,7 @@ title: Alessandro Lorenzi
 DevOps Engineer, amateur photographer, boardgamer
 
 <div id="webaddress">
-<a href="me@alorenzi.eu">me@alorenzi.eu</a>
+<a href="alorenzi@alorenzi.eu">alorenzi@alorenzi.eu</a>
 | <a href="https://alorenzi.eu/cv/">https://alorenzi.eu/cv/</a>
 </div>
 
