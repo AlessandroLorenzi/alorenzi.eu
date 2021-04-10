@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="{%if page.lang %}{{page.lang}}{%else%}it{%endif%}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="{% if page.description %}{{ page.description }}{% else %}A post about: {{ page.title }}{% endif %}"
+    />
     <title>
       {% if page.title %} {{ page.title }} | {% endif %}Alessandro Lorenzi
     </title>
