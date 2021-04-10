@@ -6,7 +6,7 @@ title: Alessandro Lorenzi
 Giocatore da tavolo, esploratore, digital enthusiast.
 
 [Github](https://github.com/AlessandroLorenzi) -
-[Twitter](https://twitter.com/alorenzieu") -
+[Twitter](https://twitter.com/alorenzieu) -
 [BoardGameGeek](https://boardgamegeek.com/user/alorenzi) -
 [Resume](/cv/)
 

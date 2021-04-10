@@ -2,5 +2,5 @@
 
 export JEKYLL_ENV="production"
 jekyll  build
-rsync -a --delete  _site/ root@alorenzi.eu:/srv/blog
+rsync -a --delete  _site/ root@ssh.alorenzi.eu:/srv/blog
 
