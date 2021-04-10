@@ -23,12 +23,13 @@ h1 {
 }
 
 .head {
-  height: 5em;
+  height: 14em;
   width: 100%;
-  background-image: url(/media/wallpaper.jpg);
+  background: url(/media/wallpaper.jpg);
+  box-shadow: inset 0 0 10em #000;
   background-position: center;
   text-align: center;
-  padding-top: 16em;
+  padding-top: 10em;
 }
 .head a {
   color: #fff;
@@ -38,13 +39,8 @@ h1 {
 
 .mainbody {
   max-width: 50em;
+  padding: 0.5em;
   margin: auto;
-}
-.postbody {
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
 }
 
 .postcontent {
