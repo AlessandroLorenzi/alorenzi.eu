@@ -97,4 +97,4 @@ func main() {
 }
 ```
 
-In [part two](/2021/04/10/gomock.html) we will mock `xyz` and test `mypackage`
+In [part two](/2021/04/10/gomock.html){:target="_blank"} we will mock `xyz` and test `mypackage`
