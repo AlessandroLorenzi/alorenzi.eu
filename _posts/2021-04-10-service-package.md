@@ -15,7 +15,7 @@ Let's analyze this simple package. The function inside the package will use an e
 ```go
 package mypackage
 
-import "github.com/xyz/xyz"
+import 	"github.com/AlessandroLorenzi/postgomock/xyz"
 
 func GetInfoFromXyz() (string, error) {
     xyzSvc := xyz.New(
@@ -41,7 +41,7 @@ We have one dependency: `xyz`. Let's create an interface that expose what we nee
 
 ```go
 type Xyz interface{
-GetInfo(int) (*xyz.GetInfoOutput, error)
+    GetInfo(int) (*xyz.GetInfoOutput, error)
 }
 ```
 
@@ -51,12 +51,17 @@ Now let's create our service.
 
 ```go
 type Service struct {
-xyzSvc Xyz
+    xyzSvc *xyz.XYZ
 }
 
 func New(xyzSvc *xyz.XYZ) *Service{
-return &Service
+    return &Service
 }
+
+func New(xyzSvc Xyz) *Service {
+	return &Service{xyzSvc: xyzSvc}
+}
+
 ```
 
 > Hint: in GoLand you can open _Context Action_ (`Alt+Return`) ad automatically _Generate Constructor_.
@@ -65,11 +70,11 @@ Now you can modify the `GetInfoFromXyz` as Service reciver.
 
 ```go
 func (s *Service) GetInfoFromXyz() (string, error) {
-data, err := s.xyzSvc.GetInfo(42)
-if err != nil {
-return "", err
-}
-return data.InfoINeed, nil
+    data, err := s.xyzSvc.GetInfo(42)
+    if err != nil {
+        return "", err
+    }
+    return data.InfoINeed, nil
 }
 ```
 
@@ -92,4 +97,4 @@ func main() {
 }
 ```
 
-In part two we will mock `xyz` and test `mypackage`
+In [part two](/2021/04/10/gomock.html) we will mock `xyz` and test `mypackage`
