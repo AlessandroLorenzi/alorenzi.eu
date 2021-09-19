@@ -26,8 +26,36 @@ In my spare time I walk in cities or mountains taking photographs or I play boar
 
 ## Currently
 
-`2019-now`
-**DevOps Engineer** @ [brumbrum S.p.A.](https://www.brumrbum.it/)
+**Product Contributor/Platform Engineer** @ [casavo](https://www.casavo.com)  
+Casavo is the first home instant buyer in Europe operating in Italy and Spain.
+
+In Casavo I contribute to manage, develop and monitor the AWS environments and the 
+kubernetes clusters. 
+
+## Toolbox
+
+**Indispensable tools**: linux, git, docker
+
+**InfraAsACode**: Terraform, Ansible, Cloudformation
+
+**Coding**: 2 years in **GoLang** (and I love it!);
+also PHP, Python and a bit of node.
+
+**CI**: DroneCI, GitHub Actions, Bitbuckt Pipeline 
+
+**A bit rusty**:
+
+- _HashiCorp_ stuff: consul, vault, packer
+- _Automation_: puppet, ansible
+- _Icinga2_
+- _ELK Stack_
+
+
+# Past Occupations
+
+`2019-2021`
+
+**DevOps Engineer** @ [brumbrum S.p.A.](https://www.brumrbum.it/)  
 brumbrum.it is a ramp up company, we sell renewed cars and long term
 car rentals.
 
@@ -42,26 +70,6 @@ Our teams develop in PHP, Python, Node and Go and I lead developers to
 write better code and I help them troubleshoot. When I have to develop a
 service or a lambda I prefer to develop in Go,
 I appreciate this language a lot!
-
-## Toolbox
-
-**Indispensable tools**: linux, git, docker,
-
-**InfraAsACode**: Cloudformation on **AWS**, Terraform on **Google Cloud**
-
-**Coding**: 2 years in **GoLang** (and I love it!).
-Also PHP, Python and a bit of node.
-
-**CI**: Bitbuckt Pipeline (and used much more)
-
-**A bit rusty**:
-
-- _HashiCorp_ stuff: consul, vault, packer
-- _Automation_: puppet, ansible
-- _Icinga2_
-- _ELK Stack_
-
-## Past Occupations
 
 `2016-2019`
 **DevOps Engineer** @ [lm-networks](https://www.lm-net.it/)  
