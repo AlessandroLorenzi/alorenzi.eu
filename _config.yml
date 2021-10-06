@@ -9,5 +9,5 @@ kramdown:
     default_lang: html
     css_class: "syntax"
 
-    #plugins:
-    #  - jekyll-minifier
+plugins:
+  - jekyll-minifier
