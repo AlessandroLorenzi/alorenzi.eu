@@ -58,6 +58,17 @@ h1 {
   font-style: italic;
 }
 
+.postimage {
+  width: 100%;
+}
+
+.postcontent img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .syntax {
   width: 100%;
   overflow: auto;
