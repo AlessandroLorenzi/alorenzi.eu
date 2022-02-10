@@ -15,7 +15,7 @@ Let's analyze this simple package. The function inside the package will use an e
 ```go
 package mypackage
 
-import 	"github.com/AlessandroLorenzi/postgomock/xyz"
+import  "github.com/AlessandroLorenzi/postgomock/xyz"
 
 func GetInfoFromXyz() (string, error) {
     xyzSvc := xyz.New(
@@ -59,7 +59,7 @@ func New(xyzSvc *xyz.XYZ) *Service{
 }
 
 func New(xyzSvc Xyz) *Service {
-	return &Service{xyzSvc: xyzSvc}
+    return &Service{xyzSvc: xyzSvc}
 }
 
 ```

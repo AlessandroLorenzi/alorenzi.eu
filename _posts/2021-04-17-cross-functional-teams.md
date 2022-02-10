@@ -48,16 +48,16 @@ one or more expertise area.
 
 For example in a team of four:
 
-- Mario has strong skills in _Business Value Optimization_ and _Business Analysis_
-- Alessandro is great in _Infrastructure Engineering_, _Continuous Delivery_ and
-  _Security, Risk & Compliance_
-- Francesca is powerful in _backend programming_ and _architecture & design_
-- Giovanna is an excellent _full-stack programmer_ and write _test specifications_
+- Mario has strong skills in *Business Value Optimization* and *Business Analysis*
+- Alessandro is great in *Infrastructure Engineering*, *Continuous Delivery* and
+  *Security, Risk & Compliance*
+- Francesca is powerful in *backend programming* and *architecture & design*
+- Giovanna is an excellent *full-stack programmer* and write *test specifications*
 
 Together they have all the skills needed inside a cross-functional team but everyone knows the fundamentals about other
 peoples subjects.
 
-_Courage_, _team-building_, _DevOps leadership_ and _Continuous improvement_ are so important that every person in the
+*Courage*, *team-building*, *DevOps leadership* and *Continuous improvement* are so important that every person in the
 team should be acquainted with them.
 
 ## Advantages
