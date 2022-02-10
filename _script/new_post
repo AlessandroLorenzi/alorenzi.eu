@@ -1,0 +1,24 @@
+#!/bin/bash
+
+POST_TITLE=$@
+POST_URL=$@
+
+
+POST_URL=$(echo "${POST_URL,,}" | sed 's/[^0-9a-zA-Z ]*//g' | sed 's/[ ]/-/g' )
+POST_FILE_NAME="_posts/$(date +%Y-%m-%d)-${POST_URL}.md"
+
+if [[ -f ${POST_FILE_NAME} ]]
+then
+  echo "I will not overwrite file!"
+  exit 1
+fi
+
+echo "---" > ${POST_FILE_NAME}
+echo "layout: post" >> ${POST_FILE_NAME}
+echo "author: Alessandro Lorenzi" >> ${POST_FILE_NAME}
+echo "title: ${POST_TITLE}" >> ${POST_FILE_NAME}
+echo "tags:" >> ${POST_FILE_NAME}
+echo "---" >> ${POST_FILE_NAME}
+
+
+echo "Created a new post: ${POST_TITLE}"
