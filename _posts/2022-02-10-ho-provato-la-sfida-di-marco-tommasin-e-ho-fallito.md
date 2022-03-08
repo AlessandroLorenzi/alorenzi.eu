@@ -11,7 +11,7 @@ imprese in cui si porta al limite delle proprie capacitá nel tentativo di migli
 stile apprezzo particolarmente due cose: il minimalismo e la capacitá di parlare delle proprie
 sconfitte e difficoltá.
 
-Qualche mese fa ha postato un video in cui per 30 affrontava una challenge trovata su instagram modificando
+Qualche mese fa ha postato un video in cui per 30 giorni affrontava una challenge trovata su instagram modificando
 qualche regola per adattarsi al suo stile di vita e ai propri obiettivi.
 
 Mi ero accorto che mi svegliavo un attimo prima di iniziare a lavorare facendo una colazione sempre piú
@@ -51,7 +51,7 @@ volte anche una bella doccia!
 
 Questo era un obiettivo facile, giá lo facevo. Ma in realtá qualche volta ho fatto anche piú allenamenti
 aggiungendo un full body, andando in piscina o a camminare in montagna. In piú mi ha motivato a
-recuperare il sabato il giorno dipalestra che ho perso. Insomma, sono passato dai tre soliti allenamenti
+recuperare il sabato il giorno di palestra che ho perso. Insomma, sono passato dai tre soliti allenamenti
 a 4 o 5!
 
 ### 8000 passi al giorno
