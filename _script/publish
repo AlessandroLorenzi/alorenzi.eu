@@ -5,5 +5,5 @@ docker run --rm \
   --env JEKYLL_ENV="production"  \
   -it jekyll/jekyll jekyll build
 
-rsync -a --delete  _site/ root@ssh.alorenzi.eu:/srv/blog
+rsync -a --delete  _site/ root@mail.alorenzi.eu:/srv/blog
 
