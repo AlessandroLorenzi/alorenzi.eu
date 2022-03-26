@@ -3,11 +3,9 @@ layout: home
 title: Alessandro Lorenzi
 ---
 
-Giocatore da tavolo, esploratore, digital enthusiast.
+Alti obiettivi, basse aspettative, impegno costante.
 
 [Github](https://github.com/AlessandroLorenzi){:target="_blank"} -
-[Twitter](https://twitter.com/alorenzieu){:target="_blank"} -
-[BoardGameGeek](https://boardgamegeek.com/user/alorenzi){:target="_blank"} -
 [Resume](/cv/)
 
 - GPG Key: [Alessandro Lorenzi &lt;alorenzi@alorenzi.eu&gt;](/318E56727D8C39555247E493F1D4E1C7FF1209BF.txt)
