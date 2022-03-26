@@ -3,8 +3,6 @@ layout: cv
 title: Alessandro Lorenzi
 ---
 
-# Alessandro Lorenzi
-
 DevOps Engineer, amateur photographer, boardgamer
 
 <div id="webaddress">
@@ -29,8 +27,8 @@ In my spare time I walk in cities or mountains taking photographs or I play boar
 **Product Contributor/Platform Engineer** @ [casavo](https://www.casavo.com)  
 Casavo is the first home instant buyer in Europe operating in Italy and Spain.
 
-In Casavo I contribute to manage, develop and monitor the AWS environments and the 
-kubernetes clusters. 
+In Casavo I contribute to manage, develop and monitor the AWS environments and the
+kubernetes clusters.
 
 ## Toolbox
 
@@ -50,8 +48,7 @@ also PHP, Python and a bit of node.
 - _Icinga2_
 - _ELK Stack_
 
-
-# Past Occupations
+## Past Occupations
 
 `2019-2021`
 
@@ -133,11 +130,6 @@ and support testers.
 **Università degli Studi di Milano**  
 Bachelor's degree in computer science
 
-### GDPR
+## GDPR
 
 I hereby consent to the processing of the personal data in this CV according to art. 13 GDPR 679/16 for the sole purpose of consideration of my skills and experience for professional opportunities.
-
-<!--
-
-Last updated: March 2021
--->
