@@ -25,9 +25,11 @@
     <img src="/media/post-images/{{page.image}}" class="postimage" />
     {% endif %}
     <div class="postcontent">{{content}}</div>
+    {% if page.author and page.date %}
     <div class="postedby">
       Posted by {{ page.author }} on {{ page.date | date_to_string }}
     </div>
+    {% endif %}
   </div>
 </body>
 
