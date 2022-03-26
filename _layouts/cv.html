@@ -1,16 +1,22 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
+  <title> {% if page.title %}{{ page.title }} | {% endif %}CV</title>
   <link href="/media/{{ site.cv.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
   <link href="/media/{{ site.cv.style }}-print.css" type="text/css" rel="stylesheet" media="print">
 </head>
+
 <body>
   <div id="main">
     <div id="content">
-    {{ content }}
+      {% if page.title %}<h1>{{ page.title}}</h1>{% endif %}
+      {{ content }}
+
     </div>
+
   </div>
 </body>
+
 </html>
