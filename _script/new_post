@@ -1,7 +1,12 @@
 #!/bin/bash
 
-POST_TITLE=$@
-POST_URL=$@
+POST_TITLE=$1
+
+echo "Post title: $POST_TITLE"
+echo -n "ok? (ctrl+c to exit)"
+read
+
+POST_URL=$POST_TITLE
 
 
 POST_URL=$(echo "${POST_URL,,}" | sed 's/[^0-9a-zA-Z ]*//g' | sed 's/[ ]/-/g' )
@@ -22,3 +27,4 @@ echo "---" >> ${POST_FILE_NAME}
 
 
 echo "Created a new post: ${POST_TITLE}"
+echo "File: $POST_FILE_NAME"
