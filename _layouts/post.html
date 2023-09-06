@@ -44,7 +44,14 @@
       L.tileLayer('https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=7c93641105ca407bb46b56fae930f8fe', {}).addTo(map);
 
       var gpx = '/media/geo/2023-09-03_09_47_03.901_2023-09-03T09_47+02.gpx';
-      new L.GPX(gpx, { async: true }).on('loaded', function (e) {
+      new L.GPX(gpx, {
+        async: true,
+        marker_options: {
+          startIconUrl: 'https://mpetazzoni.github.io/leaflet-gpx/pin-icon-start.png',
+          endIconUrl: 'https://mpetazzoni.github.io/leaflet-gpx/pin-icon-end.png',
+          shadowUrl: 'https://mpetazzoni.github.io/leaflet-gpx/pin-shadow.png'
+        }
+      }).on('loaded', function (e) {
         map.fitBounds(e.target.getBounds());
       }).addTo(map);
     </script>
