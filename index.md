@@ -3,8 +3,6 @@ layout: home
 title: Alessandro Lorenzi
 ---
 
-Alti obiettivi, basse aspettative, impegno costante.
-
 [Github](https://github.com/AlessandroLorenzi){:target="_blank"} -
 [Resume](/cv/)
 
