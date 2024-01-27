@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
   {% endif %}
 
-
 </head>
 
 <body>
@@ -37,7 +36,6 @@
     {% endif %}
 
     {% if page.gpx %}
-
     <div id="map" style="width: 100%; height: 30em"></div>
     <script>
       var map = L.map('map');
@@ -58,12 +56,32 @@
     {% endif %}
 
     <div class="postcontent">{{content}}</div>
+
+    {% if page.gallery %}
+    <h2>Gallery</h2>
+    <div class="gallery">
+      {% for image in page.gallery %}
+      
+      <a data-fslightbox href="/media/post-images/{{image}}"><img src="/media/post-images/{{image}}" style="width: 200px; height: 200px; object-fit: cover;" /></a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     {% if page.author and page.date %}
     <div class="postedby">
       Posted by {{ page.author }} on {{ page.date | date_to_string }}
     </div>
     {% endif %}
   </div>
+
+  {% if page.gallery %}
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js" 
+    integrity="sha512-03Ucfdj4I8Afv+9P/c9zkF4sBBGlf68zzr/MV+ClrqVCBXWAsTEjIoGCMqxhUxv1DGivK7Bm1IQd8iC4v7X2bw=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+  ></script>
+  {% endif %}
 </body>
 
 </html>

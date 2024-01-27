@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --rm \
+podman run --rm \
   --volume="$PWD:/srv/jekyll" \
   --env JEKYLL_ENV="production"  \
   -it jekyll/jekyll jekyll build
