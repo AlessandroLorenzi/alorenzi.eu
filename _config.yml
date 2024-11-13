@@ -1,0 +1,13 @@
+cv:
+  style: davewhipp
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: "syntax"
+
+plugins:
+  - jekyll-minifier

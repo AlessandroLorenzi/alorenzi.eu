@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap");
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Indie Flower", cursive;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.head {
+  height: 5em;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 3em;
+}
+.head a {
+  color: #000;
+  font-family: "Indie Flower", cursive;
+  font-size: 3em;
+}
+
+.mainbody {
+  max-width: 50em;
+  padding: 0em 2em;
+  margin: auto;
+}
+
+.postcontent {
+  text-align: justify;
+  font-size: 1em;
+}
+
+.highlight {
+  padding: 0.01em 0.7em;
+}
+
+.postedby {
+  font-size: 0.75em;
+  font-style: italic;
+}
+
+.postimage {
+  width: 100%;
+}
+
+.postcontent img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.syntax {
+  width: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ff79c6 #282a36;
+}
