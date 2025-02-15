@@ -15,7 +15,13 @@ name: duild and deploy on AWS
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: jekyll/jekyll
     steps:
+      - run: |
+          apk add git-lfs
+          git config --global --add safe.directory /__w/alorenzi.eu/alorenzi.eu
+
       - uses: actions/checkout@v2
         with:
           lfs: true
@@ -24,12 +30,7 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs checkout
 
-      - name: Build site
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-          future: false
+      - run: jekyll build
 
       - name: Deploy
         uses: reggionick/s3-deploy@v3
