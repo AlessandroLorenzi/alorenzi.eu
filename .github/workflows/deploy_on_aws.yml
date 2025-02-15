@@ -28,7 +28,9 @@ jobs:
           submodules: recursive
 
       - name: Checkout LFS objects
-        run: git lfs checkout
+        run: |
+          apk add git-lfs
+          git lfs checkout
 
       - run: jekyll build
 
