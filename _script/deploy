@@ -1,9 +1,14 @@
 #!/bin/bash
 
+rm -rf _site || true
+
 docker run --rm \
   --volume="$PWD:/srv/jekyll:z" \
   -u 0:1000 \
   -p 4000:4000 \
   -it jekyll/jekyll \
-  jekyll serve --watch
+  jekyll build
 
+rsync -av _site/ home:/srv/alorenzi_eu/
+
+rm -rf _site || true
