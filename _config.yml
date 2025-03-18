@@ -19,4 +19,3 @@ defaults:
     values:
       author: "Alessandro Lorenzi"
       layout: "post"
-      fediverse_creator: "@alorenzi@livellosegreto.it"

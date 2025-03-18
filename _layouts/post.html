@@ -19,6 +19,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}/media/avatar.png{% endif %}" />
+  <meta name="fediverse:creator" content="@alorenzi@livellosegreto.it">
 
   {% if page.gpx %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
@@ -82,9 +83,6 @@
     <div class="postedby">
       Posted by {{ page.author }}
     </div>
-    {% endif %}
-    {% if page.fediverse_creator %}
-    <meta name="fediverse:creator" content="{{ page.fediverse_creator }}">
     {% endif %}
   </div>
 

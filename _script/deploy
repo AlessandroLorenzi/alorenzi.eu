@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git commit -a
+git commit -av
 
 rm -rf _site || true
 git-lfs track media/**/**.jpg
