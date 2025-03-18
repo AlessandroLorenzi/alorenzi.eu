@@ -2,3 +2,8 @@ media/post-images/task-failed-successfully.jpg filter=lfs diff=lfs merge=lfs -te
 media/post-images/fat.gif filter=lfs diff=lfs merge=lfs -text
 media/post-images/marco-tommasin-challenge.jpg filter=lfs diff=lfs merge=lfs -text
 media/post-images/putto-pipi.jpg filter=lfs diff=lfs merge=lfs -text
+media/wallpaper.jpg filter=lfs diff=lfs merge=lfs -text
+media/posts/2025-03-18-apriti-sesamo/image.jpg filter=lfs diff=lfs merge=lfs -text
+media/posts/2025-03-18-apriti-sesamo/schema.jpg filter=lfs diff=lfs merge=lfs -text
+media/posts/2025-03-18-apriti-sesamo/screenshot.jpg filter=lfs diff=lfs merge=lfs -text
+media/**/**.jpg filter=lfs diff=lfs merge=lfs -text

@@ -1,6 +1,9 @@
 #!/bin/bash
 
+git commit -a
+
 rm -rf _site || true
+git-lfs track media/**/**.jpg
 
 docker run --rm \
   --volume="$PWD:/srv/jekyll:z" \

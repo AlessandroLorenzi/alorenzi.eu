@@ -11,3 +11,12 @@ kramdown:
 
 plugins:
   - jekyll-minifier
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Alessandro Lorenzi"
+      layout: "post"
+      fediverse_creator: "@alorenzi@livellosegreto.it"
