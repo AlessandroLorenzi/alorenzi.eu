@@ -4,8 +4,6 @@ image: /media/posts/2025-03-18-apriti-sesamo/schema.jpg
 description: "Ovvero, come fa il cancello di casa ad aprirsi quando torno dalla passeggiata."
 ---
 
-> Ovvero come aprire il cancello di casa avvicinandosi.
-
 Da quando ho la cana faccio avanti e indietro casa per passeggiare almeno quattro volte al giorno: la mattina appena svegli, pausa caffè, pranzo, post lavoro, prima di nanna. Non tutti sempre, ma insomma, mi piace sgranchirmi le gambe di tanto in tanto.
 
 E ogni volta che ritorno a casa parte la ricerca le chiavi nelle tasche dei pantaloni, giacca, felpa, zaino. Tutto questo con il guinzaglio in mano. Il telefono invece chissà perché so sempre dove sta.
