@@ -18,7 +18,7 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}A post about: {{ page.title }}{% endif %}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}/media/avatar.png{% endif %}" />
+  <meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/media/avatar.png{% endif %}" />
   <meta name="fediverse:creator" content="@alorenzi@livellosegreto.it">
 
   {% if page.gpx %}
