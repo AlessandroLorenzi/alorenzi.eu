@@ -5,5 +5,7 @@ docker run --rm \
   -u 0:1000 \
   -p 4000:4000 \
   -it jekyll/jekyll \
-  jekyll serve --watch
+  bash
+  # jekyll serve --watch
+
 

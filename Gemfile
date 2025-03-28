@@ -32,3 +32,4 @@ gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "jekyll-minifier"# , "~> 0.1.10"
 
 gem "webrick"
+gem "jekyll-toc"

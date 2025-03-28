@@ -11,6 +11,7 @@ kramdown:
 
 plugins:
   - jekyll-minifier
+  - jekyll-toc
 
 defaults:
   - scope:
@@ -19,3 +20,4 @@ defaults:
     values:
       author: "Alessandro Lorenzi"
       layout: "post"
+      toc: true
