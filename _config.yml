@@ -1,6 +1,3 @@
-cv:
-  style: davewhipp
-
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -8,6 +5,8 @@ kramdown:
   syntax_highlighter_opts:
     default_lang: html
     css_class: "syntax"
+
+title: "Alessandro Lorenzi"
 
 plugins:
   - jekyll-minifier
