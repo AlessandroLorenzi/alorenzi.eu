@@ -19,7 +19,12 @@
   <div class="mainbody">
     <div id="content">{{ content }}</div>
 
-    <h2>Posts</h2>
+    <h2>
+      Posts
+      <a href="https://alorenzi.eu/feed.xml">
+        <img src="/media/rss.png" alt="RSS Feed" style="width: 0.6em; height: 0.6em;" />
+      </a>
+    </h2>
     <ul>
       {% for post in site.posts %}
       <li>
