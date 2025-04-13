@@ -1,7 +1,7 @@
 ---
 title: Immich-FUSE
 description: Un progettino per montare immich come filesystem
-image: https://alorenzi.eu/media/posts/2025-04-13-immich-fuse/graph.jpg
+image: /media/posts/2025-04-13-immich-fuse/graph.jpg
 ---
 
 tl;dr: ho creato un filesystem in userspace (FUSE) per montare le immagini di Immich in una directory locale. [Questo é il repo](https://github.com/AlessandroLorenzi/immich-fuse).
