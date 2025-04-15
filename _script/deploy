@@ -1,10 +1,12 @@
 #!/bin/bash
 
 git add --all
+find media -name '*.jpg' | xargs git-lfs track
+git add --all
+
 git commit -av
 
 rm -rf _site || true
-git-lfs track media/**/**.jpg
 
 docker run --rm \
   --volume="$PWD:/srv/jekyll:z" \
