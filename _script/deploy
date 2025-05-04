@@ -13,6 +13,6 @@ docker run --rm \
   -it jekyll/jekyll \
   jekyll build
 
-rsync -av _site/ root@alorenzi:/srv/alorenzi_eu/
+rsync -av _site/ home:/srv/alorenzi_eu/
 
 
