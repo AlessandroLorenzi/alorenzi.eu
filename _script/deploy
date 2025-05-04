@@ -15,4 +15,3 @@ docker run --rm \
 
 rsync -av _site/ home:/srv/alorenzi_eu/
 
-
