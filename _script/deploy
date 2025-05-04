@@ -6,8 +6,6 @@ git add --all
 
 git commit -av
 
-rm -rf _site || true
-
 docker run --rm \
   --volume="$PWD:/srv/jekyll:z" \
   -u 0:1000 \
@@ -15,6 +13,6 @@ docker run --rm \
   -it jekyll/jekyll \
   jekyll build
 
-rsync -av _site/ home:/srv/alorenzi_eu/
+rsync -av _site/ root@alorenzi:/srv/alorenzi_eu/
 
-rm -rf _site || true
+
