@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
 ```
 
-L'ho parallelizzato perché stavo diventando vecchio.
+L'ho parallelizzato perché stavo diventando vecchio ad aspettare che si facesse la lista di tutte le chiavi una per una, ma potete aggiustare il `max_workers` se non volete pesare sul redis.
 
 E niente, il colpevole era chi pensavamo che fosse, ma abbiamo la prova provata.
 
