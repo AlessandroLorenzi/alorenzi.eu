@@ -11,3 +11,5 @@ title: Alessandro Lorenzi
 - Sul fediverso:
     - <a rel="me" href="https://livellosegreto.it/@alorenzi">livellosegreto.it/@alorenzi</a>
     - <a rel="me" href="https://varese.social/@alorenzi">varese.social/@alorenzi</a>
+
+- [Radio](/radio.html)
