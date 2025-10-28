@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Do I Need It Now?</title>
+    <style>
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;max-width:800px;margin:24px auto;padding:0 16px}
+      label{font-weight:600}
+      .result{margin-top:16px;padding:12px;border-radius:8px;background:#f3f4f6}
+      .bar{height:18px;background:#e5e7eb;border-radius:12px;overflow:hidden}
+      .bar > i{display:block;height:100%;background:linear-gradient(90deg,#60a5fa,#38bdf8)}
+      table{width:100%;margin-top:12px;border-collapse:collapse}
+      td{padding:6px 4px}
+    </style>
+  </head>
+  <body>
+    <h1>Do I Need It Now?</h1>
+    <p>Usa questo strumento per valutare se un acquisto è giustificato in base a vari fattori come utilità, impatto finanziario, sostituzione, fattori psicologici e impatto ambientale.</p>
+    <p><strong>Nota:</strong> Questo strumento non salva alcun dato da nessuna parte. Tutte le informazioni rimangono solo nel tuo browser.</p>
+    <form id="decision-form">
+      <label for="item">L'oggetto:</label><br>
+      <input type="text" id="item" name="item" placeholder="es. macchina fotografica"><br><br/>
+
+      <h2>🧭 Utilità e scopo</h2>
+
+      <label>Risolve un problema reale o è un desiderio passeggero?</label><br>
+      <input type="radio" id="real-problem" name="need-type" value="real-problem">
+      <label for="real-problem">Problema reale</label><br>
+      <input type="radio" id="momentary-desire" name="need-type" value="momentary-desire">
+      <label for="momentary-desire">Desiderio momentaneo</label><br><br>
+
+      <label>Frequenza d'uso prevista</label><br>
+      <input type="radio" id="daily" name="usage-frequency" value="daily">
+      <label for="daily">Ogni giorno</label><br>
+      <input type="radio" id="monthly" name="usage-frequency" value="monthly">
+      <label for="monthly">Ogni mese</label><br>
+      <input type="radio" id="yearly" name="usage-frequency" value="yearly">
+      <label for="yearly">Una volta l'anno</label><br><br>
+
+      <h2>💸 Impatto finanziario</h2>
+
+      <label>Esiste un'alternativa più semplice/ economica (noleggio, prestito, usato)?</label><br>
+      <input type="radio" id="yes-alternative" name="alternative-option" value="yes">
+      <label for="yes-alternative">Sì</label><br>
+      <input type="radio" id="no-alternative" name="alternative-option" value="no">
+      <label for="no-alternative">No</label><br><br>
+
+      <label>Il costo per uso è proporzionato al valore ricevuto?</label><br>
+      <input type="radio" id="yes-proportional" name="cost-value" value="yes">
+      <label for="yes-proportional">Sì</label><br>
+      <input type="radio" id="no-proportional" name="cost-value" value="no">
+      <label for="no-proportional">No</label><br><br>
+
+      <label>Prezzo stimato (€)</label><br>
+      <input type="number" id="price" min="0" step="0.01" placeholder="es. 500"><br>
+      <label>Usi previsti (numero totale)</label><br>
+      <input type="number" id="uses" min="1" step="1" placeholder="es. 200"><br><br>
+
+      <h2>🔁 Sostituzione</h2>
+
+      <label>Sostituisce qualcosa che già possiedo?</label><br>
+      <input type="radio" id="yes-replacement" name="replacement" value="yes">
+      <label for="yes-replacement">Sì</label><br>
+      <input type="radio" id="no-replacement" name="replacement" value="no">
+      <label for="no-replacement">No</label><br><br>
+
+      <label>Quello che ho funziona ancora o si può riparare?</label><br>
+      <input type="radio" id="still-works" name="current-condition" value="still-works">
+      <label for="still-works">Sì, funziona / riparabile</label><br>
+      <input type="radio" id="needs-repair" name="current-condition" value="needs-repair">
+      <label for="needs-repair">No, non funziona / necessita riparazione</label><br><br>
+
+      <h2>🧠 Fattori psicologici</h2>
+
+      <label>Motivazione: migliorare una funzionalità reale o solo "avere qualcosa di nuovo"?</label><br>
+      <input type="radio" id="real-improvement" name="improvement-motivation" value="real-improvement">
+      <label for="real-improvement">Miglioramento reale</label><br>
+      <input type="radio" id="something-new" name="improvement-motivation" value="something-new">
+      <label for="something-new">Solo novità</label><br><br>
+
+      <label>Se nessuno lo sapesse, lo vorrei lo stesso?</label><br>
+      <input type="radio" id="yes-private" name="private-desire" value="yes">
+      <label for="yes-private">Sì</label><br>
+      <input type="radio" id="no-private" name="private-desire" value="no">
+      <label for="no-private">No</label><br><br>
+
+      <h2>🌍 Impatto ambientale ed etico</h2>
+
+      <label>Quanto è durevole / riparabile?</label><br>
+      <input type="radio" id="very-durable" name="durability" value="very-durable">
+      <label for="very-durable">Molto durevole e riparabile</label><br>
+      <input type="radio" id="somewhat-durable" name="durability" value="somewhat-durable">
+      <label for="somewhat-durable">Abbastanza</label><br>
+      <input type="radio" id="not-durable" name="durability" value="not-durable">
+      <label for="not-durable">Poco durevole / non riparabile</label><br><br>
+
+      <label>Posso scegliere un usato / ricondizionato?</label><br>
+      <input type="radio" id="yes-used" name="used-option" value="yes">
+      <label for="yes-used">Sì</label><br>
+      <input type="radio" id="no-used" name="used-option" value="no">
+      <label for="no-used">No</label><br><br>
+
+      <input type="submit" value="Calcola punteggio">
+    </form>
+
+    <div id="result" class="result" style="display:none">
+      <h3>Risultato</h3>
+      <div class="bar" aria-hidden>
+        <i id="bar-fill" style="width:0%"></i>
+      </div>
+      <p id="score-text" style="margin-top:8px;font-weight:700"></p>
+      <div id="breakdown"></div>
+    </div>
+
+    <script>
+      const form = document.getElementById('decision-form');
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        // READ VALUES
+        const item = document.getElementById('item').value.trim() || 'Questo oggetto';
+        const needType = document.querySelector('input[name="need-type"]:checked')?.value;
+        const usage = document.querySelector('input[name="usage-frequency"]:checked')?.value;
+        const alt = document.querySelector('input[name="alternative-option"]:checked')?.value;
+        const costValue = document.querySelector('input[name="cost-value"]:checked')?.value;
+        const price = parseFloat(document.getElementById('price').value) || null;
+        const uses = parseInt(document.getElementById('uses').value) || null;
+        const replacement = document.querySelector('input[name="replacement"]:checked')?.value;
+        const currentCond = document.querySelector('input[name="current-condition"]:checked')?.value;
+        const improv = document.querySelector('input[name="improvement-motivation"]:checked')?.value;
+        const privateDesire = document.querySelector('input[name="private-desire"]:checked')?.value;
+        const durability = document.querySelector('input[name="durability"]:checked')?.value;
+        const usedOption = document.querySelector('input[name="used-option"]:checked')?.value;
+
+        // SAFETY: require at least needType and usage to compute meaningful score
+        // but we won't block — missing answers count as neutral (0.5)
+        function valOrNeutral(v, mapping){
+          if(v===undefined) return 0.5;
+          return mapping[v] ?? 0.5;
+        }
+
+        // SECTION WEIGHTS
+        const W = { utility:30, financial:25, replacement:15, psych:10, env:20 };
+
+        // UTILITY
+        const needMap = { 'real-problem':1, 'momentary-desire':0 };
+        const freqMap = { 'daily':1, 'monthly':0.5, 'yearly':0.1 };
+        const needVal = valOrNeutral(needType, needMap);
+        const freqVal = valOrNeutral(usage, freqMap);
+        const utilityScore = (needVal*0.6 + freqVal*0.4) * W.utility;
+
+        // FINANCIAL
+        // alternative-option: if there's an alternative -> worse (0), if no alternative -> better (1)
+        const altMap = { 'yes':0, 'no':1 };
+        const costMap = { 'yes':1, 'no':0 };
+        const altVal = valOrNeutral(alt, altMap);
+        const costVal = valOrNeutral(costValue, costMap);
+        const financialScore = (altVal*0.5 + costVal*0.5) * W.financial;
+
+        // REPLACEMENT
+        // if replaces existing item: good only if current doesn't work; if doesn't replace -> good (adds value)
+        const replMap = { 'yes':1, 'no':0 };
+        const currMap = { 'still-works':0, 'needs-repair':1 };
+        const replAns = document.querySelector('input[name="replacement"]:checked');
+        let replacementScoreVal;
+        if(!replAns){
+          replacementScoreVal = 0.5; // neutral
+        } else if(replAns.value === 'no'){
+          replacementScoreVal = 1; // new addition can be useful
+        } else {
+          // yes replacement
+          replacementScoreVal = valOrNeutral(currentCond, currMap);
+        }
+        const replacementScore = replacementScoreVal * W.replacement;
+
+        // PSYCHOLOGICAL
+        const improvMap = { 'real-improvement':1, 'something-new':0 };
+        const privateMap = { 'yes':1, 'no':0 };
+        const improvVal = valOrNeutral(improv, improvMap);
+        const privateVal = valOrNeutral(privateDesire, privateMap);
+        const psychScore = ((improvVal + privateVal)/2) * W.psych;
+
+        // ENVIRONMENTAL
+        const durMap = { 'very-durable':1, 'somewhat-durable':0.6, 'not-durable':0.2 };
+        const usedMap = { 'yes':1, 'no':0 };
+        const durVal = valOrNeutral(durability, durMap);
+        const usedVal = valOrNeutral(usedOption, usedMap);
+        const envScore = (durVal*0.6 + usedVal*0.4) * W.env;
+
+        // TOTAL
+        const total = Math.round((utilityScore + financialScore + replacementScore + psychScore + envScore));
+        const pct = Math.max(0, Math.min(100, total));
+
+        // COST PER USE (if price and uses provided)
+        let cpuText = '';
+        if(price && uses){
+          const cpu = price / uses;
+          cpuText = `<tr><td><strong>Costo per uso</strong></td><td>€ ${cpu.toFixed(2)} ( ${uses} usi )</td></tr>`;
+        }
+
+        // RECOMMENDATION
+        let rec = '';
+        if(pct >= 75) rec = 'Acquisto consigliato: sembra un buon acquisto.';
+        else if(pct >= 50) rec = 'Consideralo con attenzione: potresti valutare alternative o aspettare.';
+        else rec = 'Sconsigliato: probabilmente non vale la pena ora.';
+
+        // SHOW
+        const res = document.getElementById('result');
+        res.style.display = 'block';
+        document.getElementById('bar-fill').style.width = pct + '%';
+        document.getElementById('score-text').textContent = `${pct}/100 — ${rec}`;
+
+        document.getElementById('breakdown').innerHTML = `
+          <table>
+            <tr><td><strong>Oggetto</strong></td><td>${item}</td></tr>
+            <tr><td><strong>Utilità</strong></td><td>${utilityScore.toFixed(1)} / ${W.utility}</td></tr>
+            <tr><td><strong>Finanziario</strong></td><td>${financialScore.toFixed(1)} / ${W.financial}</td></tr>
+            <tr><td><strong>Sostituzione</strong></td><td>${replacementScore.toFixed(1)} / ${W.replacement}</td></tr>
+            <tr><td><strong>Psicologico</strong></td><td>${psychScore.toFixed(1)} / ${W.psych}</td></tr>
+            <tr><td><strong>Ambientale</strong></td><td>${envScore.toFixed(1)} / ${W.env}</td></tr>
+            ${cpuText}
+          </table>
+        `;
+
+        // Accessibility: focus result
+        res.scrollIntoView({behavior:'smooth'});
+        res.focus && res.focus();
+      });
+    </script>
+  </body>
+</html>
