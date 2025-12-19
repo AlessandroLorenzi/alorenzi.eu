@@ -1,5 +1,5 @@
 ---
-title: "Redid db sizes"
+title: "Redis db sizes"
 description: "Come capire quale database sta occupando un botto di spazio"
 ---
 
