@@ -34,6 +34,26 @@ h1 {
   color: #000;
   font-family: "Indie Flower", cursive;
   font-size: 3em;
+  text-decoration: none;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #c9c9c9;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+a:visited {
+  color: #1a1a1a;
+}
+
+a:hover,
+a:focus-visible {
+  color: #c2410c;
+  text-decoration-color: #c2410c;
 }
 
 .mainbody {
