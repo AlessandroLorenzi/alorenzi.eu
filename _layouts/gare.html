@@ -29,6 +29,7 @@
     <table class="catalog-table">
       <thead>
         <tr>
+          <th>ID</th>
           <th>Data</th>
           <th>Evento</th>
           <th>Regione</th>
@@ -40,6 +41,7 @@
       <tbody>
         {% for entry in entries %}
         <tr>
+          <td>{% if entry.link %}<a href="{{ entry.link }}" target="_blank" rel="noopener">{{ entry.id }}</a>{% else %}{{ entry.id }}{% endif %}</td>
           <td>{{ entry.date | date: "%d/%m/%Y" }}</td>
           <td>{{ entry.event }}</td>
           <td>{{ entry.region }}</td>

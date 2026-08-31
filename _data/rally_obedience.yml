@@ -1,100 +1,134 @@
-- date: '2026-02-08'
+- id: '6204'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6204#a_eventhead
+  date: '2026-02-08'
   event: Well Done
   region: Lombardia
   qualification: Eccellente
   score: 199
   points: 2.5
-- date: '2026-02-15'
+- id: '6325'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6325#a_eventhead
+  date: '2026-02-15'
   event: Officina Del Cane
   region: Lombardia
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-03-29'
+- id: '6774'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6774#a_eventhead
+  date: '2026-03-29'
   event: Belgioioso
   region: Lombardia
   qualification: Eccellente
   score: 198
   points: 2.5
-- date: '2026-04-12'
+- id: '6611'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6611#a_eventhead
+  date: '2026-04-12'
   event: Romano Canavese - To
   region: Piemonte
   qualification: Eccellente
   score: 196
   points: 2.5
-- date: '2026-04-19'
+- id: '6381'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6381#a_eventhead
+  date: '2026-04-19'
   event: Centro Cinofilo Educativo Carmagnola To
   region: Piemonte
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-04-26'
+- id: '6382'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6382#a_eventhead
+  date: '2026-04-26'
   event: Asd Jollylandia - Roasio Vc
   region: Piemonte
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-05-03'
+- id: '6860'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6860#a_eventhead
+  date: '2026-05-03'
   event: Lazzate 03 Maggio
   region: Lombardia
   qualification: Eccellente
   score: 199
   points: 2.5
-- date: '2026-05-10'
+- id: '7152'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=7152#a_eventhead
+  date: '2026-05-10'
   event: Bareggio Mi
   region: Lombardia
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-05-23'
+- id: '6985'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6985#a_eventhead
+  date: '2026-05-23'
   event: Mifido Asd - Genova Crocefieschi
   region: Liguria
   qualification: Eccellente
   score: 199
   points: 2.5
-- date: '2026-05-24'
+- id: '6988'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6988#a_eventhead
+  date: '2026-05-24'
   event: Mifido Asd - Genova Crocefieschi
   region: Liguria
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-05-31'
+- id: '6206'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=6206#a_eventhead
+  date: '2026-05-31'
   event: Well Done Treviglio
   region: Lombardia
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-06-06'
+- id: '7302'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=7302#a_eventhead
+  date: '2026-06-06'
   event: Alzate Di Momo No
   region: Piemonte
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-06-20'
+- id: '5982'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=5982#a_eventhead
+  date: '2026-06-20'
   event: Dogzilla Asd - Osio Sopra Bg
   region: Lombardia
   qualification: Eccellente
   score: 199
   points: 2.5
-- date: '2026-07-04'
+- id: '7365'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=7365#a_eventhead
+  date: '2026-07-04'
   event: Asd Freedom Dogs Life - Brescia
   region: Lombardia
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-07-18'
+- id: '7518'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=7518#a_eventhead
+  date: '2026-07-18'
   event: Vita Da Cani Asd Osio Sopra Bg
   region: Lombardia
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-08-29'
+- id: '7744'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=7744#a_eventhead
+  date: '2026-08-29'
   event: Trofeo Pretty Sun Luna
   region: Lombardia
   qualification: Eccellente Netto
   score: 200
   points: 3.0
-- date: '2026-08-30'
+- id: '7760'
+  link: https://csencinofilia.sportdata.org/csencinofilia/set-online/veranstaltung_info_main.php?active_menu=calendar&vernr=7760#a_eventhead
+  date: '2026-08-30'
   event: Trofeo Pretty Sun Luna
   region: Lombardia
   qualification: Eccellente Netto
