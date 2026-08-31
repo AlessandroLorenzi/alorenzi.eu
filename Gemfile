@@ -33,3 +33,6 @@ gem "jekyll-minifier"# , "~> 0.1.10"
 
 gem "webrick"
 gem "jekyll-toc"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
