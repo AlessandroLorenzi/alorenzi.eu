@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{%if page.lang %}{{page.lang}}{%else%}it{%endif%}">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Alessandro Lorenzi Homepage" />
+
+  <title>
+    {% if page.title %} {{ page.title }} | {% endif %}Alessandro Lorenzi
+  </title>
+  <link href="/media/site-screen.css" type="text/css" rel="stylesheet" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="head">
+    <a href="/">Alessandro Lorenzi</a>
+  </div>
+  <div class="mainbody">
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+    {% assign raw_entries = site.data[page.data_source] %}
+
+    {% if raw_entries %}
+    {% assign entries = raw_entries | sort: "date" %}
+    <p>{{ entries.size }} gar{% if entries.size != 1 %}e{% else %}a{% endif %}</p>
+    <table class="catalog-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Evento</th>
+          <th>Regione</th>
+          <th>Qualifica</th>
+          <th>Punteggio</th>
+          <th>Punti</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for entry in entries %}
+        <tr>
+          <td>{{ entry.date | date: "%d/%m/%Y" }}</td>
+          <td>{{ entry.event }}</td>
+          <td>{{ entry.region }}</td>
+          <td>{{ entry.qualification }}</td>
+          <td>{{ entry.score }}</td>
+          <td>{{ entry.points }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p><em>Nessuna gara ancora.</em></p>
+    {% endif %}
+  </div>
+</body>
+
+</html>

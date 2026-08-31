@@ -9,4 +9,5 @@ title: Alessandro Lorenzi
 - GPG Key: [Alessandro Lorenzi &lt;alessandro.lorenzi@casavo.com&gt;](/3E3B12DDC75D0FCB7E94C6DA8BB769940085DC79.txt)
 - SSK Keys: [ssh.keys](/ssh_keys.txt)
 - 📖 [letture](/libri.html)
+- 🐕 [rally obedience](/rally-obedience.html)
 
