@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 git add --all
 find media -name '*.jpg' | xargs git-lfs track
 git add --all
@@ -9,9 +11,8 @@ git commit -av
 docker run --rm \
   --volume="$PWD:/srv/jekyll:z" \
   -u 0:1000 \
-  -p 4000:4000 \
-  -it jekyll/jekyll \
-  jekyll build
+  jekyll/jekyll \
+  bash -c "bundle install && bundle exec jekyll build"
 
 rsync -av _site/ home:/srv/alorenzi_eu/
 
