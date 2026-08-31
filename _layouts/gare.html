@@ -24,7 +24,7 @@
     {% assign raw_entries = site.data[page.data_source] %}
 
     {% if raw_entries %}
-    {% assign entries = raw_entries | sort: "date" %}
+    {% assign entries = raw_entries | sort: "date" | reverse %}
     <p>{{ entries.size }} gar{% if entries.size != 1 %}e{% else %}a{% endif %}</p>
     <table class="catalog-table">
       <thead>
