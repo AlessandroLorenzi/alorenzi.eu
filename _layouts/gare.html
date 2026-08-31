@@ -25,7 +25,9 @@
 
     {% if raw_entries %}
     {% assign entries = raw_entries | sort: "date" | reverse %}
-    <p>{{ entries.size }} gar{% if entries.size != 1 %}e{% else %}a{% endif %}</p>
+    {% if page.source_url %}
+    <p><a href="{{ page.source_url }}" target="_blank" rel="noopener">Libretto di gara originale</a></p>
+    {% endif %}
     <table class="catalog-table">
       <thead>
         <tr>
