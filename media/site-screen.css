@@ -72,3 +72,23 @@ h1 {
   scrollbar-width: thin;
   scrollbar-color: #ff79c6 #282a36;
 }
+
+.catalog-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+.catalog-table th,
+.catalog-table td {
+  text-align: left;
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.catalog-cover {
+  width: 3em;
+  height: 4.5em;
+  object-fit: cover;
+}

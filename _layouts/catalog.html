@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{%if page.lang %}{{page.lang}}{%else%}it{%endif%}">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Alessandro Lorenzi Homepage" />
+
+  <title>
+    {% if page.title %} {{ page.title }} | {% endif %}Alessandro Lorenzi
+  </title>
+  <link href="/media/site-screen.css" type="text/css" rel="stylesheet" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="head">
+    <a href="/">Alessandro Lorenzi</a>
+  </div>
+  <div class="mainbody">
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+    {% assign entries = site.data[page.data_source] %}
+
+    {% if entries and entries.size > 0 %}
+    <p>{{ entries.size }} element{% if entries.size != 1 %}i{% endif %}</p>
+    <table class="catalog-table">
+      <thead>
+        <tr>
+          <th>Copertina</th>
+          <th>Titolo</th>
+          <th>{{ page.creator_label | default: "Autore" }}</th>
+          <th>Finito il</th>
+          <th>Voto</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for entry in entries %}
+        <tr>
+          <td>
+            {% if entry.cover and entry.cover != "" %}
+            <img src="{{ entry.cover }}" alt="Copertina di {{ entry.title }}" class="catalog-cover" />
+            {% endif %}
+          </td>
+          <td>{{ entry.title }}</td>
+          <td>{{ entry.creator }}</td>
+          <td>{% if entry.finished %}{{ entry.finished | date: "%-d %B %Y" }}{% endif %}</td>
+          <td>
+            {% if entry.rating and entry.rating > 0 %}
+            {% assign full_stars = entry.rating | at_most: 5 %}
+            {% for i in (1..5) %}{% if i <= full_stars %}&#9733;{% else %}&#9734;{% endif %}{% endfor %}
+            {% else %}
+            <em>Nessun voto</em>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p><em>Nessun elemento ancora.</em></p>
+    {% endif %}
+  </div>
+</body>
+
+</html>
