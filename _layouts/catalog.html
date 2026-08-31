@@ -21,9 +21,10 @@
 
     {{ content }}
 
-    {% assign entries = site.data[page.data_source] %}
+    {% assign raw_entries = site.data[page.data_source] %}
 
-    {% if entries and entries.size > 0 %}
+    {% if raw_entries %}
+    {% assign entries = raw_entries | sort: "finished" | reverse %}
     <p>{{ entries.size }} element{% if entries.size != 1 %}i{% endif %}</p>
     <table class="catalog-table">
       <thead>
@@ -45,7 +46,7 @@
           </td>
           <td>{{ entry.title }}</td>
           <td>{{ entry.creator }}</td>
-          <td>{% if entry.finished %}{{ entry.finished | date: "%-d %B %Y" }}{% endif %}</td>
+          <td>{% if entry.finished %}{{ entry.finished | date: "%d/%m/%Y" }}{% endif %}</td>
           <td>
             {% if entry.rating and entry.rating > 0 %}
             {% assign full_stars = entry.rating | at_most: 5 %}
