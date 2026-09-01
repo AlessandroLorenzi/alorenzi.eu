@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="{%if page.lang %}{{page.lang}}{%else%}it{%endif%}">
+
+<head>
+  <meta charset="utf-8" />
+  {% assign listing = site.data[page.data_source] %}
+  <meta name="description" content="{{ listing.description }}" />
+
+  <title>
+    {% if page.title %} {{ page.title }} | {% endif %}Alessandro Lorenzi
+  </title>
+  <link href="/media/site-screen.css" type="text/css" rel="stylesheet" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="{{ listing.title }}" />
+  <meta property="og:description" content="{{ listing.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ site.url }}/media/immobili/{{ page.data_source | replace: '_', '-' }}/opengraph.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SingleFamilyResidence",
+    "name": "{{ listing.title }}",
+    "description": "{{ listing.description }}",
+    "url": "{{ page.url | absolute_url }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ listing.address.street }}",
+      "addressLocality": "{{ listing.address.locality }}",
+      "postalCode": "{{ listing.address.postal_code }}",
+      "addressRegion": "{{ listing.address.region }}",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ listing.geo.lat }},
+      "longitude": {{ listing.geo.lng }}
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": {{ listing.price }},
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+  <div class="head">
+    <a href="/">Alessandro Lorenzi</a>
+  </div>
+  <div class="mainbody">
+    <img class="property-cover" src="{{ listing.cover.src }}" alt="{{ listing.cover.alt }}" />
+
+    <header class="property-hero">
+      <h1>{{ listing.title }}</h1>
+      <p class="property-price">{{ listing.price_display }}<span class="property-price-sqm"> · {{ listing.price_sqm }}</span></p>
+      <div class="link-grid property-links">
+        <a class="link-chip property-cta" href="mailto:{{ listing.contact_email }}">✉️ Contattami</a>
+        {% for link in listing.listing_links %}
+        <a class="link-chip" href="{{ link.url }}" target="_blank" rel="noopener">
+          <img class="link-icon" src="https://www.google.com/s2/favicons?domain={{ link.icon_domain }}&sz=32" alt="" />
+          {{ link.label }}
+        </a>
+        {% endfor %}
+      </div>
+    </header>
+
+    <section>
+      <h2>Descrizione</h2>
+      <div class="property-description">
+        {% for paragraph in listing.description_paragraphs %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section>
+      <h2>Caratteristiche dell'immobile</h2>
+      {% for group in listing.specs %}
+      <div class="specs-group">
+        <h3>{{ group.group }}</h3>
+        <div class="specs-table">
+          {% for item in group.items %}
+          <div class="specs-cell"><span class="label">{{ item.label }}</span><span class="value">{{ item.value }}</span></div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Foto</h2>
+      <div class="property-gallery">
+        {% for photo in listing.photos %}
+        <a data-fslightbox="gallery" href="{{ photo.full }}">
+          <img src="{{ photo.thumb }}" alt="{{ photo.alt }}" loading="lazy" />
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section>
+      <h2>Virtual tour</h2>
+      <div id="tour" class="property-tour" style="height: 26em;"></div>
+      <div class="scene-links">
+        {% for scene in listing.tour.scene_links %}
+        <a href="#" onclick="tourViewer.loadScene('{{ scene.id }}'); return false;">{{ scene.label }}</a>
+        {% endfor %}
+      </div>
+      <p><a href="{{ page.tour_url }}">Apri a schermo intero</a></p>
+    </section>
+
+    <section>
+      <h2>Dove si trova</h2>
+      <div id="map" class="property-map"></div>
+    </section>
+  </div>
+
+  <script>
+    var map = L.map('map').setView([{{ listing.geo.lat }}, {{ listing.geo.lng }}], 18);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([{{ listing.geo.lat }}, {{ listing.geo.lng }}]).addTo(map);
+
+    var tourViewer = pannellum.viewer('tour', {
+      default: {{ listing.tour.default | jsonify }},
+      scenes: {{ listing.tour.scenes | jsonify }}
+    });
+  </script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js"
+    integrity="sha512-03Ucfdj4I8Afv+9P/c9zkF4sBBGlf68zzr/MV+ClrqVCBXWAsTEjIoGCMqxhUxv1DGivK7Bm1IQd8iC4v7X2bw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</body>
+
+</html>

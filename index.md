@@ -14,21 +14,5 @@ title: Alessandro Lorenzi
   </a>
   <a class="link-chip" href="/libri.html">📖 Letture</a>
   <a class="link-chip" href="/rally-obedience.html">🐕 Rally Obedience</a>
+  <a class="link-chip" href="/viale-sicilia.html">🏠 Casa in vendita - Viale Sicilia 4</a>
 </div>
-
-### Chiavi
-
-<ul class="key-list">
-  <li>
-    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
-    GPG: <a href="/318E56727D8C39555247E493F1D4E1C7FF1209BF.txt">Alessandro Lorenzi &lt;alorenzi@alorenzi.eu&gt;</a>
-  </li>
-  <li>
-    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
-    GPG: <a href="/3E3B12DDC75D0FCB7E94C6DA8BB769940085DC79.txt">Alessandro Lorenzi &lt;alessandro.lorenzi@casavo.com&gt;</a>
-  </li>
-  <li>
-    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-    SSH: <a href="/ssh_keys.txt">ssh.keys</a>
-  </li>
-</ul>

@@ -1,0 +1,262 @@
+title: "Casa in Vendita - Viale Sicilia 4, Busto Arsizio 21052 VA"
+description: "Trilocale di 83 mq in vendita a Busto Arsizio, zona San Michele: cucina a vista, due camere, studio, balconi, box auto e cantina. Prezzo 121.000 €."
+address:
+  street: "Viale Sicilia 4"
+  locality: "Busto Arsizio"
+  postal_code: "21052"
+  region: "VA"
+price: 121000
+price_display: "121.000 €"
+price_sqm: "1.458 €/m²"
+contact_email: "me@alorenzi.eu"
+geo:
+  lat: 45.608316
+  lng: 8.832074
+listing_links:
+  - label: "Casavo"
+    url: "https://casavo.com/it/annuncio/64812/"
+    icon_domain: "casavo.com"
+  - label: "Immobiliare"
+    url: "https://www.immobiliare.it/annunci/131929562"
+    icon_domain: "immobiliare.it"
+
+cover:
+  src: "/media/immobili/viale-sicilia/mosaic/sala-CAM_20260808143547_0301_D.JPG"
+  alt: "Cucina a vista con elettrodomestici in acciaio e piano cottura a induzione"
+
+description_paragraphs:
+  - "Trilocale luminoso e moderno in vendita a Busto Arsizio, zona San Michele."
+  - "In un condominio anni '70 ben tenuto, proponiamo in vendita un luminoso trilocale situato al secondo piano, ideale per chi cerca una casa moderna, accogliente e pronta da vivere, in una posizione strategica e ben collegata."
+  - "La localizzazione risulta particolarmente vantaggiosa: la fermata dell'autobus dista appena <strong>due minuti</strong> a piedi e un parco pubblico è raggiungibile in altrettanto tempo. Nelle immediate vicinanze si trovano bar, ristoranti e altre attività commerciali, con un supermercato raggiungibile in circa dieci minuti."
+  - "Con una metratura di oltre <strong>83 mq</strong>, l'appartamento offre spazi ben distribuiti e funzionali. Ristrutturato negli anni scorsi, si presenta fresco, moderno e curato, pronto per essere abitato senza necessità di interventi."
+  - "La zona giorno è composta da un living con <strong>cucina a vista</strong>, affacciato sul balcone, perfetto per creare un ambiente conviviale e piacevole."
+  - "Un comodo corridoio conduce alla zona notte, garantendo una distribuzione ordinata degli ambienti e una piacevole separazione tra la zona giorno e le camere."
+  - "La zona notte comprende una grande camera matrimoniale con balcone, un bagno finestrato con doccia e una <strong>stanza singola o comodo studio</strong>, ideale come spazio per lo smart working o ambiente versatile da adattare alle proprie esigenze."
+  - "Completano la proprietà <strong>box auto e cantina</strong>, per una soluzione ancora più pratica e completa."
+  - "Non aspettare, prenota la tua visita!"
+
+specs:
+  - group: "Abitazione"
+    items:
+      - label: "Prezzo"
+        value: "121.000 €"
+      - label: "Prezzo al mq"
+        value: "1.458 €/m²"
+      - label: "Superficie"
+        value: "83 mq"
+      - label: "Locali"
+        value: "3"
+      - label: "Camere"
+        value: "2"
+      - label: "Ascensore"
+        value: "No"
+      - label: "Piano dell'immobile"
+        value: "2° Piano"
+      - label: "Condizioni dell'immobile"
+        value: "Altro"
+      - label: "Data di costruzione"
+        value: "1962"
+      - label: "Box"
+        value: "Sì"
+      - label: "Cantina"
+        value: "Sì"
+      - label: "Balconi"
+        value: "2"
+  - group: "Interno"
+    items:
+      - label: "Finestre"
+        value: "Doppi vetri"
+      - label: "Cucina"
+        value: "Cucina a vista"
+      - label: "Orientamento"
+        value: "Est, Ovest, Nord"
+      - label: "Bagno"
+        value: "1"
+      - label: "Toilette"
+        value: "1"
+      - label: "Lavori da pianificare"
+        value: "Nessuno"
+  - group: "Spesa energetica"
+    items:
+      - label: "Tipo di riscaldamento"
+        value: "Riscaldamento centralizzato"
+      - label: "Classe Energetica"
+        value: "In attesa di certificazione"
+  - group: "Condominio"
+    items:
+      - label: "Spese"
+        value: "3000 €/anno"
+
+photos:
+  - thumb: "/media/immobili/viale-sicilia/mosaic/sala-CAM_20260808143547_0301_D.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/sala-CAM_20260808143547_0301_D.JPG"
+    alt: "Cucina a vista con elettrodomestici in acciaio e piano cottura a induzione"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/sala-CAM_20260808143626_0302_D.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/sala-CAM_20260808143626_0302_D.JPG"
+    alt: "Soggiorno con tavolo da pranzo, divano e porta finestra sul balcone"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/sala-CAM_20260808143700_0303_D.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/sala-CAM_20260808143700_0303_D.JPG"
+    alt: "Ingresso con porta blindata e porta di un ripostiglio"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/sala-CAM_20260808143755_0304_D.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/sala-CAM_20260808143755_0304_D.JPG"
+    alt: "Balcone del soggiorno con vista sul verde e unità esterna del climatizzatore"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/corridoio-compose_video_1787133616953.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/corridoio-compose_video_1787133616953.JPG"
+    alt: "Corridoio con zona lavanderia, scaldabagno e accesso alle camere"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/camera-da-letto-compose_video_1787129033671.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/camera-da-letto-compose_video_1787129033671.JPG"
+    alt: "Camera da letto matrimoniale con parete verde e accesso al balcone"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/camera-da-letto-compose_video_1787129014474.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/camera-da-letto-compose_video_1787129014474.JPG"
+    alt: "Camera da letto con armadio a muro e scrivania"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/camera-da-letto-compose_video_1787128954237.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/camera-da-letto-compose_video_1787128954237.JPG"
+    alt: "Vista dal balcone della camera da letto sul quartiere"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/camera-da-letto-compose_video_1787129244158.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/camera-da-letto-compose_video_1787129244158.JPG"
+    alt: "Balcone della camera da letto con tenda da sole"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/studio-compose_video_1787398863069.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/studio-compose_video_1787398863069.JPG"
+    alt: "Studio con scrivania, divano letto e finestra"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/studio-compose_video_1787398892337.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/studio-compose_video_1787398892337.JPG"
+    alt: "Studio arredato con chitarre a parete, scrivania e divano letto"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/bagno-compose_video_1787931360632.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/bagno-compose_video_1787931360632.JPG"
+    alt: "Bagno con mobile lavabo sospeso e specchio contenitore"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/bagno-compose_video_1787931393798.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/bagno-compose_video_1787931393798.JPG"
+    alt: "Bagno finestrato con doccia, sanitari e bidet"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/cantina-compose_video_1787575263855.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/cantina-compose_video_1787575263855.JPG"
+    alt: "Cantina con spazio per biciclette, sci e attrezzatura sportiva"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/garage-compose_video_1787575222377.JPG"
+    full: "/media/immobili/viale-sicilia/carosello/garage-compose_video_1787575222377.JPG"
+    alt: "Box auto con scaffalature e banco da lavoro"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/esterno-IMG_20260824_143244466_HDR.jpg"
+    full: "/media/immobili/viale-sicilia/carosello/esterno-IMG_20260824_143244466_HDR.jpg"
+    alt: "Facciata del condominio anni '70 con balconi"
+  - thumb: "/media/immobili/viale-sicilia/mosaic/esterno-IMG_20260824_180645376_HDR.jpg"
+    full: "/media/immobili/viale-sicilia/carosello/esterno-IMG_20260824_180645376_HDR.jpg"
+    alt: "Vista della strada alberata su cui si affaccia il condominio"
+
+tour:
+  default:
+    firstScene: "sala"
+    autoLoad: true
+    sceneFadeDuration: 800
+  scenes:
+    ingresso:
+      type: "equirectangular"
+      panorama: "/media/immobili/viale-sicilia/panorama/sala-CAM_20260808130901_0294_D.JPG"
+      yaw: -50
+      hotSpots:
+        - pitch: -8
+          yaw: -90
+          type: "scene"
+          sceneId: "sala"
+          text: "Sala"
+        - pitch: -3.4144222449052872
+          yaw: 104.06011050517816
+          type: "scene"
+          sceneId: "corridoio"
+          text: "Corridoio"
+    corridoio:
+      type: "equirectangular"
+      panorama: "/media/immobili/viale-sicilia/panorama/corridoio-compose_video_1787133627568.JPG"
+      yaw: -92.19024481073029
+      hotSpots:
+        - pitch: 0
+          yaw: 79.28990122489097
+          type: "scene"
+          sceneId: "ingresso"
+          text: "Ingresso"
+        - pitch: 0
+          yaw: -82
+          type: "scene"
+          sceneId: "camera-letto"
+          text: "Camera da letto"
+        - pitch: 0
+          yaw: -60
+          type: "scene"
+          sceneId: "studio"
+          text: "Studio"
+        - pitch: 0
+          yaw: -89.15612988531626
+          type: "scene"
+          sceneId: "bagno"
+          text: "Bagno"
+    bagno:
+      type: "equirectangular"
+      panorama: "/media/immobili/viale-sicilia/panorama/bagno-compose_video_1787931419127.JPG"
+      yaw: -95.59702182240011
+      pitch: -8.200613528474388
+      hfov: 120
+      hotSpots:
+        - pitch: 0
+          yaw: 80.86911247427702
+          type: "scene"
+          sceneId: "corridoio"
+          text: "Corridoio"
+    studio:
+      type: "equirectangular"
+      panorama: "/media/immobili/viale-sicilia/panorama/studio-compose_video_1787398914704.JPG"
+      yaw: -132.6956381213763
+      pitch: -18.044250454862812
+      hfov: 120
+      hotSpots:
+        - pitch: 0
+          yaw: 87
+          type: "scene"
+          sceneId: "corridoio"
+          text: "Corridoio"
+    sala:
+      type: "equirectangular"
+      panorama: "/media/immobili/viale-sicilia/panorama/sala-CAM_20260808130928_0295_D.JPG"
+      yaw: 165.16358969916212
+      hotSpots:
+        - pitch: -10
+          yaw: 105
+          type: "scene"
+          sceneId: "ingresso"
+          text: "Ingresso"
+    balcone-camera-letto:
+      type: "equirectangular"
+      panorama: "/media/immobili/viale-sicilia/panorama/camera-da-letto-compose_video_1787128965712.JPG"
+      yaw: -75.75296535392698
+      hotSpots:
+        - pitch: 0
+          yaw: -128.02824820580452
+          type: "scene"
+          sceneId: "camera-letto"
+          text: "Camera da letto"
+    camera-letto:
+      type: "equirectangular"
+      panorama: "/media/immobili/viale-sicilia/panorama/camera-da-letto-compose_video_1787130177340.jpg"
+      yaw: -99.68385438129792
+      hotSpots:
+        - pitch: 0
+          yaw: -111.71172598623036
+          type: "scene"
+          sceneId: "balcone-camera-letto"
+          text: "Balcone"
+        - pitch: 0
+          yaw: 104.45041858199568
+          type: "scene"
+          sceneId: "corridoio"
+          text: "Corridoio"
+  scene_links:
+    - id: "sala"
+      label: "Sala"
+    - id: "ingresso"
+      label: "Ingresso"
+    - id: "corridoio"
+      label: "Corridoio"
+    - id: "camera-letto"
+      label: "Camera da letto"
+    - id: "balcone-camera-letto"
+      label: "Balcone camera da letto"
+    - id: "studio"
+      label: "Studio"
+    - id: "bagno"
+      label: "Bagno"
