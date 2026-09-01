@@ -1,16 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap");
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-h1,
+h1 {
+  font-family: "Indie Flower", cursive;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Indie Flower", cursive;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
 }
 
 body {
