@@ -26,7 +26,7 @@
     {% if raw_entries %}
     {% assign entries = raw_entries | sort: "date" | reverse %}
     {% if page.source_url %}
-    <p><a href="{{ page.source_url }}" target="_blank" rel="noopener">Libretto di gara originale</a></p>
+    <p class="table-meta"><a href="{{ page.source_url }}" target="_blank" rel="noopener">Libretto di gara originale</a></p>
     {% endif %}
     <table class="catalog-table">
       <thead>
