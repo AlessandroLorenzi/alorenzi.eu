@@ -19,20 +19,27 @@
   <div class="mainbody">
     <div id="content">{{ content }}</div>
 
-    <h2>
+    <h2 class="posts-heading">
       Posts
-      <a href="https://alorenzi.eu/feed.xml">
-        <img src="/media/rss.png" alt="RSS Feed" style="width: 0.6em; height: 0.6em;" />
+      <a href="https://alorenzi.eu/feed.xml" class="rss-link" aria-label="RSS Feed">
+        <img src="/media/rss.png" alt="RSS Feed" />
       </a>
     </h2>
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        {{post.date | date: "%-d %B %Y"}} -
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+
+    {% assign it_months = "gen,feb,mar,apr,mag,giu,lug,ago,set,ott,nov,dic" | split: "," %}
+    {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    <div class="post-list">
+      {% for year_group in posts_by_year %}
+      <h3 class="post-year">{{ year_group.name }}</h3>
+      {% for post in year_group.items %}
+      {% assign month_index = post.date | date: "%-m" | minus: 1 %}
+      <a class="post-row" href="{{ post.url }}">
+        <span class="post-date">{{ post.date | date: "%d" }} {{ it_months[month_index] }}</span>
+        <span class="post-title">{{ post.title }}</span>
+      </a>
       {% endfor %}
-    </ul>
+      {% endfor %}
+    </div>
   </div>
 </body>
 
