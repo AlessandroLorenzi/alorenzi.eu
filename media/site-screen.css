@@ -167,8 +167,13 @@ a:focus-visible {
 }
 
 .profile-name {
-  margin: 0 0 0.6em;
+  margin: 0 0 0.2em;
   font-size: 1.6em;
+}
+
+.profile-bio {
+  margin: 0 0 1em;
+  color: #666;
 }
 
 .profile-banner-inner {
